@@ -9,6 +9,9 @@ function deleteLast() {
 
 function appendCharacter(character) {
     const display = document.getElementById('display');
+    if (display.innerText == 'Error') {
+        clearDisplay();
+    }
     display.innerText += character;
 }
 
